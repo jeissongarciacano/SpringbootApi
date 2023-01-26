@@ -1,5 +1,4 @@
 package dev.jeisson.shop.model;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,5 +41,12 @@ public class Client {
     @Override
     public String toString() {
         return id + "::" + name + "::" + coins + BuystoString();
+    }
+    public void Buy(Buy buy){
+        setCoins(getCoins() - buy.getPrice());
+        getBuys().add(buy.getDescriptionP());
+    }
+    public void Morecoins(double coin){
+        setCoins(getCoins() + coin);
     }
 }
