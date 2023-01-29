@@ -1,7 +1,7 @@
 package dev.jeisson.shop.model;
 
 public class Buy {
-    private String DescriptionP;
+    private String descriptionP;
     private int clientID;
     private double price;
     public void setPrice(double price) {
@@ -14,12 +14,12 @@ public class Buy {
         return clientID;
     }
     public String getDescriptionP() {
-        return DescriptionP;
+        return descriptionP;
     }
     public void setClientID(int clientID) {
         this.clientID = clientID;
     }
     public void setDescriptionP(String description) {
-        DescriptionP = description;
+        this.descriptionP = description;
     }
 }

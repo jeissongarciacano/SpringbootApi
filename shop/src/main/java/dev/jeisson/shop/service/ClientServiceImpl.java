@@ -88,7 +88,6 @@ public class ClientServiceImpl implements ClientService{
         }
         else{
             if(getClients().get(i).getCoins() >= buy.getPrice()){
-                System.out.println(buy.getDescriptionP() + " " + buy.getPrice() + " " + buy.getClientID());
                 getClients().get(i).Buy(buy);
                 response.setMessage(getClients().get(i).toString());
                 response.setStatus(true);
